@@ -16,7 +16,9 @@ class Person {
 abstract class House {
   door: boolean = false;
   tenants: Person[] = [];
+
   constructor(protected key: Key) {}
+
   comeIn(person: Person): void {
     if (this.door) {
       this.tenants.push(person);
